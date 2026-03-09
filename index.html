@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="bn"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>আজকের বাজারদর - জাতীয় ভোক্তা-অধিকার সংরক্ষণ অধিদপ্তর</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', 'Noto Sans Bengali', sans-serif; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-screen w-full flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<div class="flex flex-col">
+<h2 class="text-lg font-bold leading-tight tracking-tight text-slate-900 dark:text-slate-100">আজকের বাজারদর</h2>
+<p class="text-[10px] font-medium text-slate-500 uppercase tracking-wider">DNCRP Bangladesh</p>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300" href="#">হোম</a>
+<a class="text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300" href="#">আমাদের সম্পর্কে</a>
+<a class="text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300" href="#">অভিযোগ</a>
+<a class="text-sm font-semibold text-slate-700 hover:text-primary dark:text-slate-300" href="#">হেল্পলাইন</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span class="text-xs font-bold">ঢাকা সিটি</span>
+<span class="material-symbols-outlined text-slate-400 text-sm cursor-pointer hover:rotate-180 transition-transform duration-500">refresh</span>
+</div>
+<button class="flex items-center justify-center rounded-lg bg-primary px-5 py-2 text-sm font-bold text-slate-900 hover:shadow-lg hover:shadow-primary/20 transition-all">
+                            লগইন
+                        </button>
+</div>
+</div>
+</div>
+</header>
+<main class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+<!-- Hero Search Section -->
+<section class="mb-12">
+<div class="relative overflow-hidden rounded-3xl bg-slate-900 px-8 py-16 shadow-2xl">
+<div class="absolute inset-0 opacity-20" data-alt="Subtle geometric pattern on dark background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRZtcERx5WY6oGtXmUJ14uKWWtjc4mzWRXs3PGVSkefoPP63H7pwyy89Jdidb--mvDH0gQFZYyvif431Y3e2lbZpKNzOjrYh4bAE6Jz_cYeHf5JxjN7t6OZbH0B6qcJKYsNCjYp4rBtB9-gmnbOyzLeDsBmEkqe21RQytDYDvNQG2nDxoSy7bP-POKzXHDWs4IJGeqzWjTz3E8VD86qAq__IwBfiSeYGA-lg9-fw5wHfu8zUdXhDAJu-80Hd6LUgRn1GW65Yr-JlFO");'></div>
+<div class="relative z-10 mx-auto max-w-3xl text-center">
+<h1 class="mb-4 text-4xl font-black text-white md:text-5xl">সঠিক বাজারদর জানুন</h1>
+<p class="mb-8 text-lg text-slate-300">ভোক্তা অধিকার রক্ষায় আমরা আপনার পাশে। নিত্যপণ্যের বর্তমান মূল্য যাচাই করুন।</p>
+<div class="flex flex-col gap-4 md:flex-row">
+<div class="flex flex-1 items-center rounded-xl bg-white p-2 shadow-inner">
+<span class="material-symbols-outlined px-3 text-slate-400">search</span>
+<input class="w-full border-none bg-transparent focus:ring-0 text-slate-900" placeholder="পণ্য খুঁজুন (উদা: চাল, ডাল, তেল)" type="text"/>
+<button class="hidden md:block rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-slate-900">অনুসন্ধান</button>
+</div>
+</div>
+<div class="mt-6 flex flex-wrap justify-center gap-3">
+<button class="flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-medium text-white hover:bg-white/20">
+<span class="material-symbols-outlined text-sm">map</span> বিভাগ: ঢাকা
+                            </button>
+<button class="flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-medium text-white hover:bg-white/20">
+<span class="material-symbols-outlined text-sm">location_city</span> জেলা: ঢাকা
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 gap-8 lg:grid-cols-4">
+<!-- Sidebar -->
+<aside class="space-y-6">
+<div class="rounded-2xl border border-primary/20 bg-primary/5 p-6">
+<h3 class="mb-4 text-lg font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">campaign</span>
+                            দ্রুত অভিযোগ
+                        </h3>
+<p class="mb-6 text-sm leading-relaxed text-slate-600 dark:text-slate-400">অতিরিক্ত মূল্য বা ওজনে কারচুপি হলে সরাসরি অভিযোগ করুন।</p>
+<button class="w-full rounded-xl bg-primary py-3 text-sm font-bold text-slate-900 shadow-md">অভিযোগ ফরম</button>
+</div>
+<div class="rounded-2xl bg-slate-900 p-6 text-white overflow-hidden relative">
+<div class="absolute -right-4 -bottom-4 h-24 w-24 rounded-full bg-primary/20 blur-3xl"></div>
+<h3 class="mb-2 text-sm font-bold uppercase tracking-widest text-primary">হেল্পলাইন</h3>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl">headset_mic</span>
+<div>
+<p class="text-2xl font-black">১৬১২১</p>
+<p class="text-[10px] text-slate-400">ভোক্তা বাতায়ন (সকাল ৮টা - রাত ১০টা)</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid and Pricing -->
+<div class="lg:col-span-3">
+<div class="mb-8">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-2xl font-bold">পণ্যের বিভাগসমূহ</h2>
+<a class="text-sm font-bold text-primary flex items-center gap-1" href="#">সব দেখুন <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+<div class="group cursor-pointer rounded-2xl bg-white dark:bg-slate-800 p-4 shadow-sm hover:shadow-md transition-all border border-transparent hover:border-primary/20">
+<div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-slate-900 transition-colors">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<h4 class="font-bold">খাদ্য সামগ্রী</h4>
+<p class="text-xs text-slate-500">২৫টি পণ্য</p>
+</div>
+<div class="group cursor-pointer rounded-2xl bg-white dark:bg-slate-800 p-4 shadow-sm hover:shadow-md transition-all border border-transparent hover:border-primary/20">
+<div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-orange-600 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">nutrition</span>
+</div>
+<h4 class="font-bold">ফলমূল</h4>
+<p class="text-xs text-slate-500">১৮টি পণ্য</p>
+</div>
+<div class="group cursor-pointer rounded-2xl bg-white dark:bg-slate-800 p-4 shadow-sm hover:shadow-md transition-all border border-transparent hover:border-primary/20">
+<div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">local_fire_department</span>
+</div>
+<h4 class="font-bold">জ্বালানি</h4>
+<p class="text-xs text-slate-500">৫টি পণ্য</p>
+</div>
+<div class="group cursor-pointer rounded-2xl bg-white dark:bg-slate-800 p-4 shadow-sm hover:shadow-md transition-all border border-transparent hover:border-primary/20">
+<div class="mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-green-100 text-green-600 group-hover:bg-green-600 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h4 class="font-bold">সবজি</h4>
+<p class="text-xs text-slate-500">৪০টি পণ্য</p>
+</div>
+</div>
+</div>
+<!-- Detailed Price Section: Rice -->
+<div class="rounded-3xl bg-white dark:bg-slate-800 p-8 shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="mb-8 flex items-center gap-4">
+<div class="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl">grass</span>
+</div>
+<div>
+<h2 class="text-2xl font-black">চালের বাজারদর (প্রতি কেজি)</h2>
+<p class="text-sm text-slate-500">সর্বশেষ আপডেট: ৩০ অক্টোবর, ২০২৪</p>
+</div>
+</div>
+<div class="grid gap-4 md:grid-cols-2">
+<!-- Rice Card 1 -->
+<div class="flex items-center justify-between rounded-2xl bg-slate-50 dark:bg-slate-900/50 p-6 border border-slate-100 dark:border-slate-800">
+<div>
+<h4 class="text-lg font-bold">সরু চাল (নাজিরশাইল/মিনিকেট)</h4>
+<p class="text-xs text-slate-500 font-medium">প্যাকিং ছাড়া খুচরা মূল্য</p>
+</div>
+<div class="text-right">
+<p class="text-2xl font-black text-primary">৳৮০ - ৮৫</p>
+<span class="inline-flex items-center text-[10px] font-bold text-red-500">
+<span class="material-symbols-outlined text-sm">trending_up</span> ২% বৃদ্ধি
+                                    </span>
+</div>
+</div>
+<!-- Rice Card 2 -->
+<div class="flex items-center justify-between rounded-2xl bg-slate-50 dark:bg-slate-900/50 p-6 border border-slate-100 dark:border-slate-800">
+<div>
+<h4 class="text-lg font-bold">মাঝারি চাল (পাইজাম/আটাশ)</h4>
+<p class="text-xs text-slate-500 font-medium">প্যাকিং ছাড়া খুচরা মূল্য</p>
+</div>
+<div class="text-right">
+<p class="text-2xl font-black text-primary">৳৬৫ - ৭০</p>
+<span class="inline-flex items-center text-[10px] font-bold text-slate-400">
+<span class="material-symbols-outlined text-sm">horizontal_rule</span> স্থিতিশীল
+                                    </span>
+</div>
+</div>
+<!-- Rice Card 3 -->
+<div class="flex items-center justify-between rounded-2xl bg-slate-50 dark:bg-slate-900/50 p-6 border border-slate-100 dark:border-slate-800">
+<div>
+<h4 class="text-lg font-bold">মোটা চাল (স্বর্ণা/চায়না)</h4>
+<p class="text-xs text-slate-500 font-medium">প্যাকিং ছাড়া খুচরা মূল্য</p>
+</div>
+<div class="text-right">
+<p class="text-2xl font-black text-primary">৳৫৫ - ৬০</p>
+<span class="inline-flex items-center text-[10px] font-bold text-green-500">
+<span class="material-symbols-outlined text-sm">trending_down</span> ১% হ্রাস
+                                    </span>
+</div>
+</div>
+<!-- Rice Card 4 -->
+<div class="flex items-center justify-between rounded-2xl bg-slate-50 dark:bg-slate-900/50 p-6 border border-slate-100 dark:border-slate-800">
+<div>
+<h4 class="text-lg font-bold">সুগন্ধি চাল (চিনিগুঁড়া)</h4>
+<p class="text-xs text-slate-500 font-medium">প্যাকিং খুচরা মূল্য</p>
+</div>
+<div class="text-right">
+<p class="text-2xl font-black text-primary">৳১০০ - ১২০</p>
+<span class="inline-flex items-center text-[10px] font-bold text-slate-400">
+<span class="material-symbols-outlined text-sm">horizontal_rule</span> স্থিতিশীল
+                                    </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark py-12">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 gap-12 md:grid-cols-4">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="h-12 w-12 rounded-full bg-slate-100 p-2 flex items-center justify-center overflow-hidden">
+<img alt="BD Government Logo" class="h-10 w-10" data-alt="National Seal of the Government of Bangladesh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVkaxV2UPDHQmDw4mnr5lsAM7Fq5aDMi_QDn1qmrSfqH0ch8hzo7sHO_PuIsy4AQjR74uk8Wzf4u3WNU9pP4TnktQSDCKKU6nV80oqtnjRbuxQ3HRpXzwqgSE4qDot4ptu444slQHkn1nModW36lsmMeulCbgXRL-2DUQ7eXwC42NtdzDet6cMXFzjwJfiz3Jag_nQSKjeO6zGZ4Yf-OXkM7m0fGiv9YrmPksQb-1d2nqplyV34vUQs9dZc-_FlBMY5sFknKtjg39Z"/>
+</div>
+<div class="font-bold leading-tight">
+<p class="text-xs text-slate-500">গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</p>
+<p class="text-sm">বাণিজ্য মন্ত্রণালয়</p>
+</div>
+</div>
+<p class="text-xs text-slate-500 leading-relaxed">জাতীয় ভোক্তা-অধিকার সংরক্ষণ অধিদপ্তর (DNCRP) বাংলাদেশের ভোক্তা স্বার্থ সংরক্ষণে নিরলসভাবে কাজ করে যাচ্ছে।</p>
+</div>
+<div>
+<h4 class="mb-6 font-bold uppercase tracking-widest text-slate-400 text-xs">গুরুত্বপূর্ণ লিঙ্ক</h4>
+<ul class="space-y-4 text-sm font-semibold">
+<li><a class="hover:text-primary transition-colors" href="#">ভোক্তা অধিকার আইন ২০০৯</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">অভিযোগ দায়ের পদ্ধতি</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">অভিযোগের বর্তমান অবস্থা</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">ফরম ডাউনলোড</a></li>
+</ul>
+</div>
+<div>
+<h4 class="mb-6 font-bold uppercase tracking-widest text-slate-400 text-xs">যোগাযোগ</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm">mail</span>
+<span>nccc-dncrp@yahoo.com</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm">phone</span>
+<span>+৮৮০-২-৮১৮৯৪২৫</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span>১ কারওয়ান বাজার (টিসিবি ভবন-৯ম তলা), ঢাকা-১২১৫</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="mb-6 font-bold uppercase tracking-widest text-slate-400 text-xs">মোবাইল অ্যাপ</h4>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3 rounded-xl bg-slate-900 p-3 text-white border border-slate-800">
+<span class="material-symbols-outlined text-3xl">play_store_installed</span>
+<div>
+<p class="text-[10px] text-slate-400">GET IT ON</p>
+<p class="text-sm font-bold">Google Play</p>
+</div>
+</div>
+<div class="flex items-center gap-3 rounded-xl bg-slate-900 p-3 text-white border border-slate-800">
+<span class="material-symbols-outlined text-3xl">store</span>
+<div>
+<p class="text-[10px] text-slate-400">Download on the</p>
+<p class="text-sm font-bold">App Store</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-slate-100 dark:border-slate-800 pt-8 text-center">
+<p class="text-xs text-slate-500">© ২০২৪ আজকের বাজারদর। সকল স্বত্ব সংরক্ষিত - জাতীয় ভোক্তা-অধিকার সংরক্ষণ অধিদপ্তর</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
